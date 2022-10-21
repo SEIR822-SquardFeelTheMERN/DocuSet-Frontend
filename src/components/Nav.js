@@ -20,21 +20,19 @@ function Nav(props) {
     	// HANDLE SUBMIT 
 	function submitHandler(event){
 		event.preventDefault();
-        console.log(title)
-        console.log(subject)
-        console.log(content)
+        console.log(title.value);
 	}
     
 	// HANDLE CHANGE 
 	function handleChange(event){
-        const inputTitle = (document.querySelector('#input-title').value);
-        const inputSubject = (document.querySelector('#input-subject').value);
-        const inputContent = (document.querySelector('#input-content').value); 
+        // const inputTitle = (document.querySelector('#input-title').value);
+        // const inputSubject = (document.querySelector('#input-subject').value);
+        // const inputContent = (document.querySelector('#input-content').value); 
 
         //SET STATES
-		setTitle((inputTitle))
-        setSubject((inputSubject))
-        setContent((inputContent))
+		setTitle(event.target.title.value)
+        setSubject(event.target.subject.value)
+        setContent(event.target.content.value)
 	}
 
     return (
