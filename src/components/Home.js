@@ -3,13 +3,13 @@ import Header from './Header';
 import SubjectSearch from './SubjectSearch';
 import Nav from './Nav';
 
-function Home({getActivity}) {
+function Home({getActivity},  props) {
 	return <div>
 
 
 		<Header/>
 		<Nav />
-		<SubjectSearch getActivity={getActivity}/>
+		<SubjectSearch getActivity={getActivity} title={props.title}/>
 		
 
 
